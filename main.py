@@ -1,3 +1,4 @@
+
 from anthropic import Anthropic
 from dotenv import load_dotenv
 import os
@@ -27,6 +28,5 @@ resposta = cliente.messages.create(
     ]
 )
 
-
-resposta_em_texto = resposta.choice[0].message.content
+resposta = resposta.content[0].text
 print(resposta)
