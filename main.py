@@ -22,7 +22,7 @@ modelo = ChatAnthropic(
     api_key=api_key
 )
 
-cadeia = modelo_cidade | modelo | StrOutputParser
+cadeia = modelo_cidade | modelo | StrOutputParser()
 
 resposta = cadeia.invoke(
     {
