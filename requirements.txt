@@ -1,6 +1,5 @@
-langchain
-langchain-anthropic
-langchain-core
+langchain==0.3.25
+langchain-community==0.3.24
 faiss-cpu
-langchain-community
 pypdf
+python-dotenv
