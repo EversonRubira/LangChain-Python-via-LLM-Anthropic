@@ -25,7 +25,7 @@ parseador_destino = JsonOutputParser(pydantic_object=Destino)
 parseador_estacionamento = JsonOutputParser(pydantic_object=Estacionamento)
 
 
-prompt_praia = ChatPromptTemplate.from_template(
+prompt_consultor_praia = ChatPromptTemplate.from_template(
     template="""
     Sugira uma cidade dado o seu interesse por {interesse}.
     {formato_de_saida}
